@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Vedio player </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btn">
+        <div class="play"></div>
+        <p>Play video</p>
+    </div>
+    <div class="clip">
+        <video src="./Ramdom_Lines_x264.mp4" controls> </video>
+        <b class="close">Close</b>
+    </div>
+</body>
+<script>
+    var btn = document.querySelector('.btn')
+    var clip = document.querySelector('.clip')
+    var Close = document.querySelector('.close')
+    var vedio = document.querySelector('vedio')
+    btn.onclick = function(){
+        btn.classList.add('active')
+        clip.classList.add('active')
+        video.play()
+    }
+    Close.onclick = function(){
+        btn.classList.remove('active')
+        clip.classList.remove('active')
+    }
+</script>
+</html>
